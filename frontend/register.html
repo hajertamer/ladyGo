@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="img/logo.png">
+    <title>Login</title>
+</head>
+
+<body>
+
+<div class="container min-vh-100 d-flex flex-column justify-content-center align-items-center ">
+<div class="d1">
+    
+    <!-- Image -->
+    <div class="text-center mb-4">
+        <img src="img/login.jpeg" alt="login" class="img-fluid im">
+    </div>
+
+    <!-- Form -->
+    <div class="w-100" style="max-width: 400px;">
+
+        <form id="loginForm" novalidate>
+
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input id="email" type="email" name="email" class="form-control" placeholder="Enter your email">
+                <small id="emailError" class="text-danger error-message">Invalid email</small>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input id="password" name="Password" type="password" class="form-control" placeholder="Enter your password">
+                <small id="passwordError" class="text-danger error-message">Password must be at least 6 characters</small>
+            </div>
+
+            <div class="d-grid">
+                <button type="submit" class="botn pt-2 pb-2">Login</button>
+            </div>
+
+        </form>
+
+        <!-- Links -->
+        <div class="text-center mt-3">
+
+            <a href="forget.html" class="d-block mb-2">Forgot password?</a>
+
+            <p class="mb-2">Or</p>
+
+            <a href="https://www.google.com/" class="d-block mb-2 botn1 pt-2 pb-2">
+                Login with Google <i class="fa-brands fa-google"></i>
+            </a>
+
+            <p>
+                Don’t have an account?
+                <a href="create_account.html">Create account</a>
+            </p>
+
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.bundle.js"></script>
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>

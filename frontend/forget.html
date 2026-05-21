@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="icon" href="img/logo.png" />
+    <title>Forget Password</title>
+  </head>
+
+  <body>
+    <div
+      class="container min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="w-100" style="max-width: 420px">
+        <form
+          id="forgetForm"
+          class="p-4 shadow rounded bg-white"
+          novalidate
+        >
+          <h4 class="text-center mb-4">Forget Password</h4>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder="Enter your email"
+            />
+            <small id="emailError" class="error-message">Invalid email</small>
+          </div>
+
+          <!-- Button -->
+          <div class="d-grid">
+            <button type="submit" class="botn pt-1 pb-1">Continue</button>
+          </div>
+        </form>
+
+        <!-- Back to login -->
+        <p class="text-center mt-3">
+          Remember your password?
+          <a href="index.html">Login</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/auth.js"></script>
+  </body>
+</html>

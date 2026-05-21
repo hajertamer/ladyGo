@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      font-family: Arial;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      
+    }
+
+  </style>
+    <link rel="icon" href="img/logo.png">
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>my account</title>
+</head>
+
+<body>
+
+<div class="profile-card">
+
+  <img src="default-avatar.png" id="mainAvatar" class="avatar">
+<span class="change-btn " onclick="openPopup()">Change Photo</span>
+  <h2>Welcome, <span id="userName"></span> </h2>
+
+  
+<div class="info">
+    <p><strong>Email:</strong> <span id="userEmail"></span></p>
+    <p><strong>Account Type:</strong> <span id="userRole"></span></p>
+  </div>
+
+  <form action="">
+    <button onclick="logout()" type="submit" formaction="home.html">Go home</button>
+  </form>
+</div>
+
+<!-- Popup  -->
+<div class="popup" id="popup">
+
+  <h3>Select Avatar</h3>
+
+  <div class="avatars">
+    <img src="img/p1.jpeg" onclick="selectAvatar(this)">
+    <img src="img/p2.jpeg" onclick="selectAvatar(this)">
+    <img src="img/p3.jpeg" onclick="selectAvatar(this)">
+  </div>
+
+  <button onclick="applyAvatar()">OK</button>
+  <button onclick="closePopup()">Cancel</button>
+
+</div>
+
+<script>
+  let selectedAvatar = null;
+
+  function openPopup() {
+    document.getElementById("popup").style.display = "block";
+  }
+
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+
+  function selectAvatar(img) {
+
+    // remove selection from all
+    let all = document.querySelectorAll(".avatars img");
+    all.forEach(i => i.classList.remove("selected"));
+
+    // add selection
+    img.classList.add("selected");
+
+    selectedAvatar = img.src;
+  }
+
+  function applyAvatar() {
+    if (selectedAvatar) {
+      document.getElementById("mainAvatar").src = selectedAvatar;
+
+      // حفظ الاختيار
+      localStorage.setItem("avatar", selectedAvatar);
+    }
+
+    closePopup();
+  }
+
+  // load saved avatar
+  window.onload = function () {
+    let saved = localStorage.getItem("avatar");
+    if (saved) {
+      document.getElementById("mainAvatar").src = saved;
+    }
+  }
+</script>
+<script src="js/profile.js"></script>
+
+</body>
+</html>

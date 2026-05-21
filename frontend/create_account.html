@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="img/logo.png">
+    <title>Sign in</title>
+</head>
+
+<body>
+
+<div class="container min-vh-100 d-flex justify-content-center align-items-center">
+
+    <div class="w-100" style="max-width: 420px;">
+
+        <form id="registerForm" class="p-4 shadow rounded bg-white" novalidate>
+
+            <h4 class="text-center mb-4">Create Account</h4>
+
+            <!-- Full Name -->
+            <div class="mb-3">
+                <label class="form-label">Full name</label>
+                <input id="name" type="text" name="username" class="form-control" placeholder="Enter full name">
+                <small id="nameError" class="error-message">Name must be at least 3 characters</small>
+            </div>
+
+            <!-- Phone -->
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input id="email" type="email" name="email" class="form-control" placeholder="Enter your email">
+                <small id="emailError" class="error-message">Invalid email</small>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <!-- <input type="password" name="password" required class="form-control" placeholder="Enter your password"> -->
+                <input id="password" type="password" name="password" class="form-control" placeholder="Enter your password">
+                <small id="passwordError" class="error-message">Password must be at least 6 characters</small>
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="mb-3">
+                <label class="form-label">Confirm password</label>
+                <!-- <input type="password" class="form-control" required placeholder="Confirm password"> -->
+                <input id="confirmPassword" type="password" class="form-control" placeholder="Confirm password">
+                <small id="confirmPasswordError" class="error-message">Passwords do not match</small>
+            </div>
+
+            <!-- Radio -->
+            <div class="mb-3">
+                <label class="form-label d-block">Select user type:</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="type" id="d" value="Driver">
+                    <label class="form-check-label" for="d">Driver</label>
+                </div>
+
+                <div class="">
+                    <input class="form-check-input" type="radio" name="type" id="p" value="Passenger">
+                    <label class="form-check-label" for="p">Passenger</label>
+                </div>
+                <small id="typeError" class="error-message">Please select user type</small>
+            </div>
+
+            <!-- Button -->
+            <div class="d-grid">
+                <button type="submit"  class="botn pt-1 pb-1">
+                    Create account
+                </button>
+            </div>
+
+        </form>
+
+        <!-- Login link -->
+        <p class="text-center mt-3">
+            Already have an account?
+            <a href="register.html">Login</a>
+        </p>
+
+    </div>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script src="js/auth.js"></script>
+</body>
+
+</html>

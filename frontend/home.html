@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/hover.css" media="all">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png">
+    <title>Home</title>
+</head>
+
+<body class="p">
+
+<nav class="navbar navbar-expand-lg nav1">
+    <div class="container">
+
+        <a class="navbar-brand l1" href="#">
+             <p class="fs-4 fw-bold fst-italic pt-2">Lady Go </p>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="nav">
+
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link l1" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link l1" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link l1" href="#book">Booking Ride</a></li>
+                <li class="nav-item"><a class="nav-link l1" href="#how">How it work</a></li>
+                <li class="nav-item"><a class="nav-link l1" >
+                  <div class="notification-icon" id="notifIcon" onclick="toggleNotifications()"><i class="fa-regular fa-bell"></i></div>        
+                  <span id="notifCount" class="notif-badge">0</span>
+
+                  <div id="notificationBox" class="notification-box">
+                    <h4>Notifications</h4>
+                    <div id="notificationList"></div>
+                  </div></a></li>
+            </ul>
+
+            <div class="d-flex align-items-center gap-2">
+                <a href="myaccount.html" class="p1 text-decoration-none"> <i class="fa-solid fa-user hvr-grow"></i>account</a>
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+
+
+<audio id="notifSound">
+  <source src="sounds/notification.mp3" type="audio/mpeg">
+</audio>
+
+
+
+
+
+
+    <header class=" row justify-content-around align-items-center mt-5 pb-4">
+        <div class="col-10 col-lg-5 mt-5 pt-5">
+            <p class="pp px-2 pt-1 pb-1 ">Your Safety , Our Priority</p>
+            <h1 class="h11 mb-2"><span class="span">Safe Rides For Women , </span> <span class="span2">by Women</span>
+            </h1>
+            <p class="fs-5 mb-5 mt-4">Book your ride easily and safely with professional female drivers. Experience a
+                community-driven service built for empowerment.</p>
+            <a href="" class="book hvr-float pt-2 pb-2 px-4 ">Book Ride <i class="fa-solid fa-arrow-right"></i></a>
+            <p class="mt-5 fs-5"><span class="span3"><i class="fa-brands fa-bluesky"></i></span> 50k+ Trusted Rides
+                Monthly</p>
+        </div>
+        <div class="col-10 col-lg-5  ">
+            <!-- <div> <img class="img-fluid im3 " src="img/drive2.jpeg" alt=""></div>
+            <div class="d-flex div  position-absolute pt-2 px-3">
+                <p class="ico "><i class="fa-solid fa-shield-heart"></i></p>
+                <p class="p3"><span class="span4">Verified Drivers</span> <br> All drivers are background checked women</p>
+
+            </div> -->
+            <img src="img/driv.png" class="im3 img-fluid  rounded-5" alt="">
+        </div>
+    </header>
+  
+    <section class="  mt-5 pb-3 pt-4 sec" id="about">
+        <p  class=" text-center p1 fs-3"> <i class="fa-solid fa-web-awesome"></i></p>
+        <p class=" text-center p1 fs-3">What's special about us?</p>
+        <div class="pt-5 row justify-content-center  mb-5 ">
+          <div class="span5 hvr-hang col-10 col-lg-3 mt-4 mx-3">
+            <p class="ico3"><i class="fa-solid fa-shield-heart"></i></p>
+            <p>24/7 Safety Monitoring :</p>
+            <p>Real-time GPS tracking and emergency  SOS features built</p>
+        </div>
+         <div class="span6 hvr-hang col-10 col-lg-3 mt-4 mx-3">
+            <p class="ico4"><i class="fa-solid fa-users"></i></p>
+            <p>Female Community :</p>
+            <p>Connect with local female drivers in a supportive environment</p>
+        </div>
+         <div class="span5 hvr-hang col-10 col-lg-3 mt-4 mx-3">
+            <p class="ico3"><i class="fa-solid fa-star"></i></p>
+            <p>Top-Rated Service :</p>
+            <p>Consistent 4.9+ star ratings for comfort and reliability</p>
+        </div>
+      </div>
+    </section>
+    <section class="sec2 pt-5" id="how">
+        <h2 class="text-center mt-3">How It Works ?</h2>
+        <p class="text-center pb-5 pt-2">Experience a journey designed for your comfort and safety.  Lumina makes every step of your ride effortless</p>
+        <div class="row justify-content-center mt-5 pt-5 pb-5">
+<div class="col-10 col-lg-2">
+                <p class=""><span class="ico5  pt-2"><i class="fa-solid fa-car hvr-push"></i></span></p>
+                          <p class="text-dark fs-5"><span class="span8 px-1">01</span>Book your rides</p>
+            <p class=""> Specify your destination and choose  the right car from our curated selection  of safe, premium vehicles</p>
+</div>
+        <div class="col-10 col-lg-2">    <p class="pt-4 fw-bolder fs-4 mx-3 span7">-----------------<i class="fa-solid fa-angle-right"></i></p></div>
+  <div class="col-10 col-lg-2">
+              <p class=""><span class="ico5  pt-2"><i class="fa-solid fa-location-dot hvr-wobble-top"></i></span></p>
+                          <p class="text-dark fs-5"><span class="span8 px-1">02</span>Track your trip</p>
+            <p class="">Track your trip in real time with our  advanced live-sharing features and verified  safety checkpoints</p>
+  </div>
+<div class="col-10 col-lg-2">            <p class="pt-4 fw-bolder fs-4 mx-3 span7">-----------------<i class="fa-solid fa-angle-right"></i></p></div>
+
+<div class="col-10 col-lg-2">
+                <p class=""><span class="ico5 pt-2"><i class="fa-brands fa-cc-visa hvr-pulse-grow"></i></span></p>
+                               <p class="text-dark fs-5"><span class="span8 px-1">03</span>Pay Easily</p>
+            <p class="">Choose the payment method that suits  you, from secure card storage to one-tap  mobile wallets</p>
+</div>
+        </div>
+       
+    </section>
+<!-- BOOKING SECTION -->
+<section class="booking-section container mt-5 mb-5" id="book">
+
+  <h2 class="text-center hvr-bob mt-3">Book Your Ride</h2>
+  <p class="text-center pb-4">Fill in your details to book your ride</p>
+
+  <div class="row g-4">
+
+    <!-- FORM -->
+    <div class="col-lg-7">
+      <form class="booking-box p-4" id="bookingForm" novalidate>
+
+        <div class="row g-3">
+
+          <div class="col-md-6">
+            <label>Drivers Name</label>
+            <select name="name" class="form-control"  id="driver">
+              <option value="">Select your name</option>
+              <option value="69f8b8b614c1d90d3dd0ace3">Fatma</option>
+              <option value="69f8b8b614c1d90d3dd0ace4">Rehab</option>
+              <option value="69f8b8b614c1d90d3dd0ace5">Maha</option>
+              <option value="69f8b8b614c1d90d3dd0ace6">Nour</option>
+              <option value="69f8b8b614c1d90d3dd0ace7">Salma</option>
+            </select>
+            <small id="driverError" class="text-danger error-message"></small>
+          </div>
+
+          <div class="col-md-6">
+            <label>Phone</label>
+            <input id="phone" name="phone" type="text" class="form-control" placeholder="Enter phone">
+            <small id="phoneError" class="text-danger error-message"></small>
+          </div>
+
+          <div class="col-md-6">
+            <label>Pick-up Date</label>
+            <input id="date" name="date" type="date" class="form-control">
+            <small id="dateError" class="text-danger error-message"></small>
+          </div>
+
+          <div class="col-md-6">
+            <label>Pick-up Time</label>
+            <input id="time" name="time" type="time" class="form-control">
+            <small id="timeError" class="text-danger error-message"></small>
+          </div>
+
+          <div class="col-md-6">
+            <label>From</label>
+            <input id="from" name="from" type="text" class="form-control" placeholder="Pickup location">
+            <small id="fromError" class="text-danger error-message"></small>
+          </div>
+
+          <div class="col-md-6">
+            <label>To</label>
+            <input id="to" name="to" type="text" class="form-control" placeholder="Destination">
+            <small id="toError" class="text-danger error-message"></small>
+          </div>
+
+        </div>
+
+        <!-- Ticket -->
+        <div class="mt-4">
+          <label class="mb-2">Ticket Type</label>
+
+          <div class="d-flex gap-3 flex-wrap">
+
+            <div class="ticket active" onclick="selectTicket(this)" data-value="standard">
+              🎫 Standard <br>
+              <small>Affordable</small>
+            </div>
+
+            <div class="ticket" onclick="selectTicket(this)" data-value="pro">
+              👑 Pro <br>
+              <small>Premium ride</small>
+            </div>
+
+          </div>
+          <small id="ticketError" class="text-danger error-message"></small>
+        </div>
+<div class="mt-4">
+  <label class="mb-2">Payment Method</label>
+
+  <div class="d-flex gap-3 flex-wrap">
+
+    <label class="payment-option">
+      <input type="radio" name="payment" value="cash" >
+      💵 Cash (Pay on arrival)
+    </label>
+
+    <label class="payment-option">
+      <input type="radio" name="payment" value="card">
+      💳 Visa / Card (Pay on arrival)
+    </label>
+
+  </div>
+  <small id="paymentError" class="text-danger error-message"></small>
+</div>
+        <textarea id="notes" name="notes" class="form-control mt-4" placeholder="Notes (optional)"></textarea>
+
+        <button type="submit" class="book-btn mt-3 w-100">
+          Book Now 🚗
+        </button>
+
+      </form> 
+    </div>
+
+    <!-- FEEDBACK -->
+    <div class="col-lg-5">
+
+      <section class="reviews-section">
+
+        <h2 class="title">Customer Feedback</h2>
+
+        <form id="feedbackForm" class="review-form">
+
+          <input type="text" id="name" placeholder="Your Name" required>
+
+          <div class="stars" id="stars">
+            <span data-value="1">☆</span>
+            <span data-value="2">☆</span>
+            <span data-value="3">☆</span>
+            <span data-value="4">☆</span>
+            <span data-value="5">☆</span>
+          </div>
+
+          <input type="hidden" id="rating" value="0">
+
+          <textarea id="message" placeholder="Write your feedback"></textarea>
+
+          <button type="submit">Submit</button>
+
+        </form>
+
+        <div id="feedbackContainer" class="reviews-container"></div>
+
+        <div class="pagination">
+          <button onclick="prevFeedback()">Prev</button>
+          <button onclick="nextFeedback()">Next</button>
+        </div>
+
+      </section>
+
+    </div>
+
+  </div>
+</section>
+    <section class=" sec2">
+        <img src="img/car.png" class="img-fluid" alt="">
+
+    </section>
+    <footer class="app-footer ">
+
+  <div class="container py-5">
+
+    <div class="row g-4">
+
+      <!-- 1: Brand -->
+      <div class="col-md-4">
+        <h3 class="footer-logo">LadyGo</h3>
+        <p class="footer-text">
+          A girls-only ride application designed for safety , <br> comfort, and trust.  
+          Driven by women, for women
+        </p>
+      </div>
+
+      <!-- 2: Links -->
+      <div class="col-md-4">
+        <h5 class="footer-title">Links</h5>
+        <ul class="footer-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#book">Booking Ride</a></li>
+          <li><a href="#how">How it works</a></li>
+        </ul>
+      </div>
+
+      <!-- 3: Account -->
+      <div class="col-md-4">
+        <h5 class="footer-title">Account</h5>
+        <ul class="footer-links">
+          <li><a href="create_account.html">sign in</a></li>
+          
+          <li><a href="register.html">login</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom text-center py-3">
+    © 2026 LadyGo. All rights reserved.
+  </div>
+
+</footer>
+    <script src="js/feedback.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script type="module" src="js/submitBooking.js"></script>
+    <script src="js/notification.js" defer></script>
+</body>
+
+</html>

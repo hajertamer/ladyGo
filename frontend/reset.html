@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="icon" href="img/logo.png" />
+    <title>Reset Password</title>
+  </head>
+
+  <body>
+    <div
+      class="container min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="w-100" style="max-width: 420px">
+        <form
+          id="resetForm"
+          class="p-4 shadow rounded bg-white"
+          novalidate
+        >
+          <h4 class="text-center mb-4">Reset Password</h4>
+
+          <!-- New Password -->
+          <div class="mb-3">
+            <label class="form-label">New password</label>
+            <input
+              id="newPassword"
+              type="password"
+              class="form-control"
+              placeholder="Enter new password"
+            />
+            <small id="newPasswordError" class="error-message"
+              >Password must be at least 6 characters</small
+            >
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="mb-3">
+            <label class="form-label">Confirm new password</label>
+            <input
+              id="confirmPassword"
+              type="password"
+              class="form-control"
+              placeholder="Confirm new password"
+            />
+            <small id="confirmPasswordError" class="error-message"
+              >Passwords do not match</small
+            >
+          </div>
+
+          <!-- Button -->
+          <div class="d-grid">
+            <button type="submit" class="botn pt-1 pb-1">Continue</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/auth.js"></script>
+  </body>
+</html>
+
+
+
